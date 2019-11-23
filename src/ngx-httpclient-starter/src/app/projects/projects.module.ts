@@ -10,10 +10,10 @@ import { HistoryComponent } from "./history/history.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms";
-import { ProjectNewComponent } from './project-new/project-new.component';
-import { ProjectListComponent } from './project-list/project-list.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
-import { ProjectEditComponent } from './project-edit/project-edit.component';
+import { ProjectNewComponent } from "./project-new/project-new.component";
+import { ProjectListComponent } from "./project-list/project-list.component";
+import { ProjectDetailsComponent } from "./project-details/project-details.component";
+import { ProjectEditComponent } from "./project-edit/project-edit.component";
 
 @NgModule({
   declarations: [
