@@ -16,17 +16,21 @@ const httpOptions = {
   providedIn: "root"
 })
 export class ProjectDataService {
-  projects: Project[];
+  projects: Observable<Project[]>;
   project: Project;
 
   constructor(private http: HttpClient) {}
 
   list() {
-    return this.http.get("/projects", { responseType: "json" }).pipe();
+    return this.http.get<Observable<Project[]>>("/projects", {
+      responseType: "json"
+    });
   }
 
   details(id: number) {
-    return this.project;
+    return this.http.get<Observable<Project[]>>("/projects/" + id, {
+      responseType: "json"
+    });
   }
 
   edit(id: number) {
